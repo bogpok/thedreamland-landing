@@ -1,0 +1,357 @@
+:root {
+    /* COLORS */
+    
+    /* text primary */
+    --color0: #FFFFFF;
+    --color00: #f2f4e5;
+    
+    --color-purple: rgb(180, 45, 121);
+    
+    --color-pink-xxl: rgb(248, 177, 253);
+    --color-pink-xl: rgb(234, 140, 240);
+    --color-pink-l: rgb(231, 95, 228);
+    --color-pink-m: rgb(198, 68, 196);
+    --color-pink-d: rgb(130, 44, 129);
+    --color-pink-xd: rgb(73, 17, 72);
+    --color-pink-xxd: rgb(48, 8, 47);
+
+    --color-neon: rgb(78, 231, 242);
+    --color-blue-l: rgb(77, 113, 201);
+    --color-blue-m: rgb(79, 32, 196);
+    --color-blue-mm: #0b2589;
+    --color-blue-d: #06113e;
+    --color-blue-xd: rgb(14,1,48);    
+    --color-blue-xxd: #030308;
+
+    --color-red-l: rgb(244, 143, 183);
+    --color-red-m: rgb(188, 47, 92);
+    --color-red-d: rgb(107, 29, 54);
+}
+
+* {
+    scroll-behavior: smooth;
+    max-width: 100vw;
+}
+
+
+
+.text-neon {
+    color: var(--color-neon);
+}
+
+.text-pink-l {
+    color: var(--color-pink-l);
+}
+
+/* fonts */
+.jaini-purva-regular {
+    font-family: "Jaini Purva", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ga-maamli-regular {
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bona-nova-sc-regular {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bona-nova-sc-bold {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.bona-nova-sc-regular-italic {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+.sixtyfour-font {
+    font-family: "Sixtyfour", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 10,
+      "SCAN" -14;
+  }
+/* fonts */
+
+
+body {
+    background-color: var(--color-blue-d);
+    margin: 0;
+    
+}
+
+header {
+    /* position: static; */
+    background-color: var(--color-blue-xxd);    
+}
+
+h1 {
+    color: var(--color0);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--color-blue-xxd);
+    box-sizing: border-box;
+}
+
+
+
+.squares {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top:1em;
+}
+
+.square {
+    width: 3em;
+    height: 2em;
+}
+.div-pink-l {
+    background-color: var(--color-pink-xl);
+    
+}
+.div-pink-m {
+    background-color: var(--color-pink-m);
+    
+}
+.div-pink-xd {
+    background-color: var(--color-pink-xd);
+    
+}
+
+.logo-bar {
+    background-color: var(--color-blue-m);    
+    text-align: center;
+    padding: 1em;
+    padding-top: 4em;
+    margin-bottom: 1em;
+    box-shadow: 
+        inset 0 0px 5px 0px var(--color-pink-xxl),
+        0 -2px 10px 5px var(--color-pink-xl);
+    
+}
+
+.logo-bar-h1 {
+    margin: 0;
+    /* color: var(--color-pink-l); */
+    color: linear-gradient(180deg,
+        var(--color-blue-d) 0%, 
+        var(--color-neon) 100%
+    );    
+
+    background: linear-gradient(180deg, 
+        var(--color-pink-xxl) 0%, 
+        var(--color-pink-l) 50%,
+        var(--color-pink-d) 90%,
+        var(--color-blue-m) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 1px 1px 30px var(--color-pink-xl);
+}
+
+.logo-bar-p {
+    background: linear-gradient(180deg, 
+        var(--color-pink-xl) 0%, 
+        var(--color-pink-l) 80%,
+        var(--color-blue-m) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    /* color: var(--color-pink-xl); */
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 30px var(--color-pink-xxl);
+}
+
+.span-encoublie {
+    /* pass */
+    color: var(--color-pink-l);
+    font-size: 1.3rem;
+}
+
+.footer-text {
+    color: var(--color00);
+    margin: 0;
+    padding: 1em;
+}
+
+.footer-logo-h {
+    color: var(--color-pink-m);
+    margin: 0;
+    text-shadow: 1px 1px 1px var(--color-red-m);
+    padding-top: .5em;
+}
+
+.media-panel {
+    box-sizing: border-box;    
+    border: 10px solid var(--color-red-l);
+    box-shadow: 14px 8px 0px 2px var(--color-red-d);
+}
+
+.text-panel {
+    color: var(--color00);    
+    background-color: var(--color-pink-xxd);
+    box-shadow: 14px 10px 0px 2px var(--color-pink-xl);
+    padding: 1.5em;
+}
+
+
+
+.image {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    justify-self: center;
+
+    object-fit: cover;
+}
+
+.container {
+    box-sizing: border-box;
+    padding: 2em;
+    max-width: 100vw;
+}
+
+.grid-container {        
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    
+    align-items: center;
+    justify-content: center;    
+}
+
+.grid-item-setfirst {
+    grid-row: 1;
+}
+
+.grid-description {
+    grid-column: span 2;     
+}
+
+
+#video {
+    aspect-ratio: 16/9;
+    width: 50%;    
+    height: 100%;
+    min-height: 250px;    
+    min-width: 450px;    
+}
+
+#video-container {
+    /* width: 100%; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 0px 20px var(--color-pink-m);
+    padding: 10px;
+    text-align: center;
+
+    background: linear-gradient(180deg, 
+        var(--color-blue-xxd) 0%, 
+        var(--color-blue-xd) 60%,
+        var(--color-pink-xd) 90%,
+        var(--color-pink-m) 100%
+    );    
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    row-gap: 0.5em;
+    word-spacing: 2em;
+}
+
+.nav-link {    
+    color: var(--color-neon);
+    text-decoration: none;
+    font-family: "Bona Nova SC", serif;
+    text-shadow: 2px 2px var(--color-blue-m);
+}
+
+.nav-link:hover {
+    color: var(--color-pink-xxl);
+    text-shadow: 2px 2px 3px var(--color-pink-l)
+}
+
+#synopsis {
+    font-family: "Bona Nova SC", serif;
+    /* color: var(--color00); */
+}
+
+#bonus-tracks {
+    text-align: center;
+}
+
+#bonus-tracks > ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* MOBILE DEVICES */
+@media only screen and (max-width: 600px) {
+    
+    #video {        
+        width: 100%;    
+        min-width: 300px;  
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        row-gap: 2em;
+        align-items: start;
+        column-gap: 0;
+        grid-auto-rows: auto;
+    }
+    
+    .logo-bar {
+        padding-top: 6em;
+    }
+
+    .grid-item-setfirst {
+        grid-row: unset;
+    }
+
+    .container{
+        padding-bottom: 0;
+    }
+
+    #about {
+        margin-top: 2em;
+    }
+}
