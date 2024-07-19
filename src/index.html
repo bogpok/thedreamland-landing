@@ -3,6 +3,14 @@
     <head>
         <title>THE DREAMLAND</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ICONS -->
+        <!-- https://use.fontawesome.com/releases/v5.8.2/css/all.css -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
+
         <link href="styles.css" rel="stylesheet">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,13 +27,29 @@
             <nav id="nav-bar">
                 <div class="nav-links">
                     <a class="nav-link" href="#logo-bar">Teaser</a>
-                    <a class="nav-link" href="#synopsis">Synopsis</a>        
-                    <a class="nav-link" href="#bonus-tracks">Lyrics</a>            
+                    <a class="nav-link" href="#synopsis">Synopsis</a>     
+                    <a class="nav-link" href="#listen-now-deezer">Listen</a>   
+                    <a class="nav-link" href="#listen-now-spotify">Lyrics</a>            
                     <a class="nav-link" href="#about">About</a>
+                    <!-- <a class="nav-link" href="#about">
+                        Share
+                        <i class="fa-solid fa-share"></i>                    
+                    </a> -->
                 </div>
-                <div class="nav-icons">
-                    <a class="nav-link" href="https://google.com">External</a>
-                    <a class="text-pink-l">ICONS</a>
+                <div class="nav-icons">                   
+
+                    <a class="link-icon" href="https://open.spotify.com/album/16YM4vePGOzgyaZpnN9iNO?si=gMR8dkC8SGyBZMSdQCK66g">
+                        <i class="fa-brands fa-spotify"></i>
+                    </a>
+                    <a class="link-icon" href="https://music.apple.com/us/album/perfect-rhyme-single/1740287250">
+                        <i class="fa-brands fa-apple"></i>
+                    </a>
+                    <a class="link-icon" href="https://music.amazon.com/albums/B0D16CLJQR?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=CY&ref=dm_sh_wKdRm5WaXyhqsFqWkYr4WWjMA">
+                        <i class="fa-brands fa-amazon"></i>
+                    </a>
+                    <a class="link-icon" href="https://youtube.com/channel/UCrOuCq8cnTxpTa1XcjrOKhw?si=DYCnKyKVOl84HoDy">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
                 </div>                
             </nav>
         </header>
@@ -114,6 +138,19 @@
                         </ul>                    
                 </section>  
             </div>                            
+
+            <!-- players -->
+            <div class="container">
+                <section id="listen-now-deezer" class="media-panel">
+                    <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/571466911" width="100%" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+                </section>
+            </div>
+            <div class="container">
+                <section id="listen-now-spotify" class="media-panel">
+                    <iframe src="https://open.spotify.com/embed/album/16YM4vePGOzgyaZpnN9iNO?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </section>
+            </div>
+
 
             <section id="lyrics">
                 <h2>LYRICS</h2>
@@ -371,7 +408,7 @@
                         </p>
                     </div>
 
-                    <div id="lyric-sp">
+                    <div id="lyric-sp" hidden>
                         <h3>ASLEEP</h3>
                         <p>
                             When I'm sitting all alone, I'm crying<br>
@@ -429,6 +466,42 @@
             <p class="footer-text">
                 Written, Performed, and Produced by Bogdan Pokrepin
             </p>    
+            <div class="social-links">                
+                <a class="link-icon" href="https://www.facebook.com/bpokrepin/">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a class="link-icon" href="https://www.instagram.com/pokrepin">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a class="link-icon" href="https://x.com/bogpok">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </a>
+            </div>
+            <div class="links-platforms footer-text">
+                <p>Available on:</p>
+                <ul>
+                    <li>
+                        <a class="nav-link" href="https://open.spotify.com/album/16YM4vePGOzgyaZpnN9iNO?si=gMR8dkC8SGyBZMSdQCK66g">Spotify</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="https://music.apple.com/us/album/perfect-rhyme-single/1740287250">Apple Music</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="https://music.amazon.com/albums/B0D16CLJQR?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=CY&ref=dm_sh_wKdRm5WaXyhqsFqWkYr4WWjMA">Amazon Music</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="https://youtube.com/channel/UCrOuCq8cnTxpTa1XcjrOKhw?si=DYCnKyKVOl84HoDy">
+                            YouTube
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a class="nav-link" href="https://deezer.page.link/AnC2TgP2ymhbSEzn7">
+                            Deezer
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <p class="footer-text">                
                 APPROXIMATE RUNNING TIME: 40 mins
                 <br>
