@@ -1,6 +1,6 @@
 {
     "welcome": "Welcome",
-    
+
     "title-subtext":"created and produced by",
     "title-translated":"",
     "nav-teaser":"Teaser",
@@ -9,8 +9,36 @@
     "nav-listen":"Listen",
     "nav-lyrics":"Lyrics",
     "nav-about":"About",
+    "synopsis-title":"A special edition featuring all episodes plus bonus tracks!",
+    "synopsis-description": "What happens when you drift off to sleep? Are you simply transported from dusk to dawn with no recollection? Or do you experience vivid visions behind closed eyes? For some, it's not just seeing images. This album dives deep into the nocturnal adventures of encoublie. Each episode recounts real events from his dreams, inviting you to join the experience.",
+
+    "tracklist-title":"Contains 5 main thrilling tracks:",
+    "prologue-title": "Prologue, \"Dreamland\".",
+    "prologue-description": "Encoublie reveals his obsession with overwhelming dreams. The 'Man in a Suit' (a figure akin to the Sandman or Morpheus), responsible for shaping the mind in sleep, follows and torments him with intense stories. This title track serves as an introduction to the album.",
+
+    "episode-one-title": "Episode One, \"Who Burnt The Baby?\".",
+    "episode-one-description": "Awakening in a room full of strangers, encoublie discovers a burnt baby. Accused and detached, he searches for refreshments but finds a rotten fruit in a cabinet. This episode explores how emotions manifest in dreams.",
+    
+    "episode-two-title": "Episode Two, \"Inside A Nightmare\".",
+    "episode-two-description": "A mysterious force compels him down a seemingly unsafe path. In a dark room, a ghost overpowers him and steals his soul. Only the hope left - for dawn to dispel the darkness.",
+    
+    "episode-three-title": "Episode Three, \"Will You Love Me?\".",
+    "episode-three-description": "Finding himself on a tram to an unknown destination, encoublie disembarks in a familiar yet bleak neighborhood. After wandering through muddy fields and climbing a high wall, he meets a friendly woman who guides him to yet another room. Inside, they navigate a chaotic hallway, encounter a menacing man with a bloodied dog, and face a frightening confrontation. Alone, encoublie reflects on the woman's earlier question about love, finding no one to answer.",
+    
+    "epilogue-title": "Epilogue, \"Lullaby\".",
+    "epilogue-description": "Instrumental reinvention of \"Who Burnt The Baby?\". Let the guitar voice tell you how it ends.",
+
+    "bonus-tracks-title": "Bonus tracks:",
+    "special-asleep-title": "Special, \"Asleep\".",
+    "special-asleep-description": "Brief instruction of how to get asleep.",
+    "special-lullaby-vaporwave-title": "Special, \"Lullaby Vaporwave Edition\".",
+    "special-lullaby-vaporwave-description": "Slowed, mixed for background listening.",
+    "special-lullaby-guitar-title": "Special, \"Lullaby Guitar Backing Track\".",
+    "special-lullaby-guitar-description": "Listen to the original, repeat great guitar lines on your own.",
 
 
     "credits-runningtime":"APPROXIMATE RUNNING TIME: 40 mins\nSTEREO - 2024",
-    "credits-website": "This webpage was made by Bogdan Pokrepin\n2024"
+    "credits-website": "This webpage was made by Bogdan Pokrepin"
 }
+
+  
