@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>THE DREAMLAND</title>
+        <title>THE DREAMLAND by encoublie</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- ICONS -->
-        <!-- https://use.fontawesome.com/releases/v5.8.2/css/all.css -->
+        <meta charset="utf-8">
+        <!-- Localization -->
+        <script src="https://unpkg.com/i18next/dist/umd/i18next.js"></script>
+        <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
+        <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.js"></script>
+        <!-- Icons -->
         <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         />
-
+        <!-- custom style -->
         <link href="styles.css" rel="stylesheet">
-
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -22,19 +25,24 @@
 
     </head>
 
+<!--     
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit(el_id) {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, "google_translate_element");
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+
     <body>
         <header id="header">
             <nav id="nav-bar">
                 <div class="nav-links">
-                    <a class="nav-link" href="#logo-bar">Teaser</a>
-                    <a class="nav-link" href="#synopsis">Synopsis</a>     
-                    <a class="nav-link" href="#listen-now-deezer">Listen</a>   
-                    <a class="nav-link" href="#listen-now-spotify">Lyrics</a>            
-                    <a class="nav-link" href="#about">About</a>
-                    <!-- <a class="nav-link" href="#about">
-                        Share
-                        <i class="fa-solid fa-share"></i>                    
-                    </a> -->
+                    <a class="nav-link" href="#logo-bar" id="nav-teaser"></a>
+                    <a class="nav-link" href="#synopsis" id="nav-synopsis"></a>     
+                    <a class="nav-link" href="#listen-now-deezer" id="nav-listen"></a>   
+                    <a class="nav-link" href="#listen-now-spotify" id="nav-lyrics"></a>            
+                    <a class="nav-link" href="#about" id="nav-about"></a>                    
                 </div>
                 <div class="nav-icons">                   
 
@@ -56,10 +64,17 @@
         <main>
             <div class="logo-bar" id="logo-bar">
                 <h1 class="sixtyfour-font logo-bar-h1">THE DREAMLAND</h1>
-                <p class="jaini-purva-regular logo-bar-p">created and produced by 
-                    <span class="span-encoublie">encoublie</span></p>
+                <p class="jaini-purva-regular logo-bar-p" id="title-translated"></p>
+                <p class="jaini-purva-regular logo-bar-p">
+                    <span id="title-subtext"></span> 
+                    <span class="span-encoublie">encoublie</span>
+                </p>
             </div>           
 
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('ru')">Русский</button>
+            <div id="welcome" style="background-color: white;"></div>
+            
             <div id="video-container">               
                 <iframe id="video" class="media-panel"
                 src="https://www.youtube.com/embed/nio6sxhktwU?si=BnmgotKT7P5n63rO">
@@ -502,11 +517,10 @@
                     </li>
                 </ul>
             </div>
-            <p class="footer-text">                
-                APPROXIMATE RUNNING TIME: 40 mins
-                <br>
-                STEREO - 2024
-            </p>          
+            <p class="footer-text" id="credits-runningtime">   
+            </p>   
+            <p class="footer-text" id="credits-website">
+            </p>           
         </footer>
         <script src="script.js"></script>
     </body>
