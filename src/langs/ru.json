@@ -37,7 +37,20 @@
     "special-lullaby-guitar-title": "Специальный выпуск, \"Колыбельная - фоновый трек для гитары\".",
     "special-lullaby-guitar-description": "Послушай оригинал и повтори гитарные мелодии самостоятельно.",
 
+    "button-panel-title":"СЛОВА ПЕСЕН",
+    "btn-dreamland": "СТРАНА СНОВ",
+    "btn-episode-1": "ЭПИЗОД 1",
+    "btn-episode-2": "ЭПИЗОД 2",
+    "btn-episode-3": "ЭПИЗОД 3",
+    "btn-special": "СПЕЦВЫПУСК",
 
-    "credits-runningtime":"ВРЕМЯ ПРОСЛУШИВАНИЯ: ~40 mins\nСТЕРЕО - 2024",
+    "title-dreamland": "СТРАНА СНОВ",
+    "text-born-from": "",
+    "text-encoublie": "encoublie",
+    "text-written-performed-produced": "Автор и исполнитель: Богдан Покрепин",
+
+    "p-available-on":"Доступно на платформах:",
+
+    "credits-runningtime":"ВРЕМЯ ПРОСЛУШИВАНИЯ: ~40 мин\nСТЕРЕО - 2024",
     "credits-website": "Автор сайта: Богдан Покрепин"
 }
