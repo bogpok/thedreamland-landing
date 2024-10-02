@@ -71,9 +71,15 @@
                 </p>
             </div>           
 
-            <button onclick="changeLanguage('en')">English</button>
-            <button onclick="changeLanguage('ru')">Русский</button>
-            <div id="welcome" style="background-color: white;"></div>
+            <div id="div-lang-selector">
+                <button onclick="toggleLang('en', this)" 
+                id = "btn-en"
+                class="lyric-btn lang-btn">English</button>
+                <button onclick="toggleLang('ru', this)" 
+                id = "btn-ru"
+                class="lyric-btn lang-btn">Русский</button>                        
+            </div>
+               
             
             <div id="video-container">               
                 <iframe id="video" class="media-panel"

@@ -464,6 +464,14 @@ a.link-icon i:hover {
 }
 
 
+#div-lang-selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1%;
+}
+
+
 /* MOBILE DEVICES */
 @media only screen and (max-width: 635px) {    
     #video {        
@@ -500,12 +508,12 @@ a.link-icon i:hover {
         justify-content: space-evenly;
     }
     .lyric-btn {
-        box-shadow: 0 4px 5px 1px var(--color-blue-m);
+        box-shadow: 0 4px 5px 1px var(--color-blue-d);
     }
     .btn-pressed {
         box-shadow: 0 4px 5px 1px var(--color-blue-l);
     }
     .lyric-btn:not(.btn-pressed):hover {
-        box-shadow: 0 3px 5px 3px var(--color-blue-l);
+        box-shadow: 0 3px 5px 3px var(--color-blue-m);
     }
 }

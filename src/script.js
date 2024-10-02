@@ -1,3 +1,10 @@
+function toggleCSSClass(target_btn, other_btns, cssclass='btn-pressed') {    
+    for (let i=0; i<other_btns.length; i++) {
+        other_btns[i].classList.remove(cssclass)
+    }
+    target_btn.classList.add(cssclass);
+}
+
 function toggleLyrics(id='', target_btn=undefined) {
     const lyrics = document.getElementById('lyric-panel');
     const childs = lyrics.children;
@@ -9,12 +16,17 @@ function toggleLyrics(id='', target_btn=undefined) {
     target_div = document.getElementById(id);
     target_div.removeAttribute('hidden');
 
-    other_btns = document.getElementById("button-panel").children;
-    for (let i=0; i<other_btns.length; i++) {
-        other_btns[i].classList.remove('btn-pressed')
-    }
+    toggleCSSClass(target_btn, 
+        document.getElementById("button-panel").children);
+}
 
-    target_btn.classList.add('btn-pressed');
+
+
+function toggleLang(lang, target_btn=undefined) {
+    changeLanguage(lang);
+    console.log(target_btn.innerText);
+    toggleCSSClass(target_btn, 
+        document.getElementsByClassName('lang-btn'));    
 }
 
 // LOCALIZATION
@@ -22,14 +34,20 @@ i18next
 .use(i18nextHttpBackend) 
 .use(i18nextBrowserLanguageDetector)
 .init({
-    fallbackLng: 'en', // Default languageб
+    fallbackLng: 'en', // Default language
     debug: true,
     backend: {
         loadPath: './langs/{{lng}}.json'
     }   
     
 }, function(err, t) {
-    updateContent(t);
+    updateContent(t);    
+    // Find button to set class
+    btn_id = `btn-${i18next.language}`
+    target_btn = document.getElementById(btn_id);
+    console.log(btn_id)
+    toggleCSSClass(target_btn, 
+        document.getElementsByClassName('lang-btn'));
 });
 
 function updateContent(t) {
