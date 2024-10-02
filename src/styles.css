@@ -355,7 +355,6 @@ footer {
 
 
 /* LYRICS */
-
 #lyrics {
     font-family: "Bona Nova SC", serif;
 
@@ -411,10 +410,16 @@ footer {
 .btn-pressed:hover {
     cursor: default;
 }
-
 /* LYRICS */
 
-
+svg {
+    height: 2rem;
+    width: 2rem;
+}
+.link-icon svg,
+.link-icon i {
+    vertical-align: top; 
+}
 .nav-icons {
     font-size: 2rem;
     display: flex;
@@ -427,7 +432,7 @@ a.link-icon {
     text-decoration: none;
     text-align: center;    
 }
-a.link-icom > i {
+a.link-icon > i {
     align-self: center;
 }
 
