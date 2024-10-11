@@ -41,13 +41,8 @@ i18next
     }   
     
 }, function(err, t) {
-    updateContent(t);    
-    // Find button to set class
-    btn_id = `btn-${i18next.language}`
-    target_btn = document.getElementById(btn_id);
-    console.log(btn_id)
-    toggleCSSClass(target_btn, 
-        document.getElementsByClassName('lang-btn'));
+    updateContent(t);      
+    updateLanguageButton();
 });
 
 function updateContent(t) {
@@ -66,3 +61,15 @@ function changeLanguage(lang) {
         updateContent(t);
     });
 }
+
+function updateLanguageButton() {
+    // Find the correct button ID based on the selected language
+    const lang = i18next.language.split('-')[0]
+    const btn_id = `btn-${lang}`;
+    const target_btn = document.getElementById(btn_id);
+    console.log(target_btn, btn_id)
+    
+    if (target_btn) {
+        toggleCSSClass(target_btn, document.getElementsByClassName('lang-btn'));
+    }
+  }
