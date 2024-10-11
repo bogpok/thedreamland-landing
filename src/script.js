@@ -27,6 +27,8 @@ function toggleLang(lang, target_btn=undefined) {
     console.log(target_btn.innerText);
     toggleCSSClass(target_btn, 
         document.getElementsByClassName('lang-btn'));    
+    // hide/show widgets
+    toggleWidgets(lang);
 }
 
 // LOCALIZATION
@@ -67,9 +69,34 @@ function updateLanguageButton() {
     const lang = i18next.language.split('-')[0]
     const btn_id = `btn-${lang}`;
     const target_btn = document.getElementById(btn_id);
-    console.log(target_btn, btn_id)
     
     if (target_btn) {
         toggleCSSClass(target_btn, document.getElementsByClassName('lang-btn'));
     }
-  }
+
+    // hide/show widgets
+    toggleWidgets(lang);
+}
+
+function toggleWidgets(lang) {
+    switch(lang) {
+        case 'ru':
+            console.log('kek')
+            showHide('ru-hide', 'en-hide');
+            break;
+        default:
+            console.log('lol')
+            showHide('en-hide', 'ru-hide');
+    }
+}
+
+const showHide = (hideClassName, showClassName) => {
+    let elemnts = document.getElementsByClassName(hideClassName);
+    for (let i = 0; i<elemnts.length; i++) {
+        elemnts[i].hidden = true;
+    }
+    elemnts = document.getElementsByClassName(showClassName);
+    for (let i = 0; i<elemnts.length; i++) {
+        elemnts[i].removeAttribute('hidden');
+    }
+}
