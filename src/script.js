@@ -27,6 +27,8 @@ function toggleLang(lang, target_btn=undefined) {
     console.log(target_btn.innerText);
     toggleCSSClass(target_btn, 
         document.getElementsByClassName('lang-btn'));    
+    // hide/show widgets
+    toggleWidgets(lang);
 }
 
 // LOCALIZATION
@@ -37,17 +39,12 @@ i18next
     fallbackLng: 'en', // Default language
     debug: true,
     backend: {
-        loadPath: './langs/{{lng}}.json'
+        loadPath: './src/langs/{{lng}}.json'
     }   
     
 }, function(err, t) {
-    updateContent(t);    
-    // Find button to set class
-    btn_id = `btn-${i18next.language}`
-    target_btn = document.getElementById(btn_id);
-    console.log(btn_id)
-    toggleCSSClass(target_btn, 
-        document.getElementsByClassName('lang-btn'));
+    updateContent(t);      
+    updateLanguageButton();
 });
 
 function updateContent(t) {
@@ -65,4 +62,41 @@ function changeLanguage(lang) {
     i18next.changeLanguage(lang, function(err, t) {
         updateContent(t);
     });
+}
+
+function updateLanguageButton() {
+    // Find the correct button ID based on the selected language
+    const lang = i18next.language.split('-')[0]
+    const btn_id = `btn-${lang}`;
+    const target_btn = document.getElementById(btn_id);
+    
+    if (target_btn) {
+        toggleCSSClass(target_btn, document.getElementsByClassName('lang-btn'));
+    }
+
+    // hide/show widgets
+    toggleWidgets(lang);
+}
+
+function toggleWidgets(lang) {
+    switch(lang) {
+        case 'ru':
+            console.log('kek')
+            showHide('ru-hide', 'en-hide');
+            break;
+        default:
+            console.log('lol')
+            showHide('en-hide', 'ru-hide');
+    }
+}
+
+const showHide = (hideClassName, showClassName) => {
+    let elemnts = document.getElementsByClassName(hideClassName);
+    for (let i = 0; i<elemnts.length; i++) {
+        elemnts[i].hidden = true;
+    }
+    elemnts = document.getElementsByClassName(showClassName);
+    for (let i = 0; i<elemnts.length; i++) {
+        elemnts[i].removeAttribute('hidden');
+    }
 }

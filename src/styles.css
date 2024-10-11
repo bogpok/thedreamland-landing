@@ -388,7 +388,7 @@ footer {
     grid-template-columns: 1fr 1fr;
 }
 
-#button-panel > div {
+#button-panel > div, #div-lang-selector > button {
     box-sizing: border-box;
     font-weight: 600;
     text-align: center;    
