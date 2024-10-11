@@ -261,6 +261,7 @@ footer {
     text-decoration: none;
     font-family: "Bona Nova SC", serif;
     text-shadow: 2px 2px var(--color-blue-m);
+    padding-right: 1em;
 }
 
 .nav-link:hover {
@@ -326,16 +327,16 @@ footer {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 0.5em;
 }
 
-.nav-links a.nav-link:last-child { 
+/* .nav-links a.nav-link:last-child { 
     display: flex; 
     align-items: center; 
     
     gap: 0.2em; 
     flex-shrink: 0; 
-}
+} */
 
 
 #bonus-tracks {
