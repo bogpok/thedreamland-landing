@@ -37,7 +37,7 @@ i18next
     fallbackLng: 'en', // Default language
     debug: true,
     backend: {
-        loadPath: './langs/{{lng}}.json'
+        loadPath: './src/langs/{{lng}}.json'
     }   
     
 }, function(err, t) {
