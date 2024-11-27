@@ -478,6 +478,10 @@ a.link-icon i:hover {
 }
 
 
+#social-tt {
+    font-size: 1.75rem;
+}
+
 /* MOBILE DEVICES */
 @media only screen and (max-width: 635px) {    
     #video {        
