@@ -1,5 +1,5 @@
 window.onload = e => {
-    main();
+    handle_ytvk();
 }
 
 function toggleCSSClass(target_btn, other_btns, cssclass='btn-pressed') {    
@@ -107,9 +107,9 @@ const showHide = (hideClassName, showClassName) => {
 
 
 // YT vs VK Handle
-const main = () => {
+const handle_ytvk = () => {
     const youtubeURL = "https://www.youtube.com/embed/RASxSpqv3fI?si=emBhprqWtOJDWAER";
-    const alternateURL = "https://vk.com/video_ext.php?oid=55859077&id=456240136&hd=2&hash=1f55786e33e276bd&autoplay=1"; 
+    const alternateURL = "https://vk.com/video_ext.php?oid=55859077&id=456240136&hd=2&hash=1f55786e33e276bd"; 
     const iframe = document.getElementById("video");
 
     async function checkYouTubeAccess() {
@@ -117,7 +117,7 @@ const main = () => {
             const response = await fetch("https://www.youtube.com/favicon.ico", { mode: 'no-cors' });
             // If fetch succeeds, YouTube is accessible
             // iframe.src = youtubeURL;
-
+            
             // pass
         } catch (error) {
             // If fetch fails, fallback to alternate source
