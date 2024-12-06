@@ -1,3 +1,7 @@
+window.onload = e => {
+    main();
+}
+
 function toggleCSSClass(target_btn, other_btns, cssclass='btn-pressed') {    
     for (let i=0; i<other_btns.length; i++) {
         other_btns[i].classList.remove(cssclass)
@@ -100,3 +104,27 @@ const showHide = (hideClassName, showClassName) => {
         elemnts[i].removeAttribute('hidden');
     }
 }
+
+
+// YT vs VK Handle
+const main = () => {
+    const youtubeURL = "https://www.youtube.com/embed/RASxSpqv3fI?si=emBhprqWtOJDWAER";
+    const alternateURL = "https://vk.com/video_ext.php?oid=55859077&id=456240136&hd=2&hash=1f55786e33e276bd&autoplay=1"; 
+    const iframe = document.getElementById("video");
+
+    async function checkYouTubeAccess() {
+        try {
+            const response = await fetch("https://www.youtube.com/favicon.ico", { mode: 'no-cors' });
+            // If fetch succeeds, YouTube is accessible
+            // iframe.src = youtubeURL;
+
+            // pass
+        } catch (error) {
+            // If fetch fails, fallback to alternate source
+            iframe.src = alternateURL;
+        }
+    }
+
+    checkYouTubeAccess();
+}
+
