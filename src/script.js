@@ -24,7 +24,7 @@ function toggleLyrics(id='', target_btn=undefined) {
 
 function toggleLang(lang, target_btn=undefined) {
     changeLanguage(lang);
-    console.log(target_btn.innerText);
+    
     toggleCSSClass(target_btn, 
         document.getElementsByClassName('lang-btn'));    
     // hide/show widgets
@@ -37,7 +37,7 @@ i18next
 .use(i18nextBrowserLanguageDetector)
 .init({
     fallbackLng: 'en', // Default language
-    debug: true,
+    debug: false,
     backend: {
         loadPath: './src/langs/{{lng}}.json'
     }   
@@ -81,11 +81,11 @@ function updateLanguageButton() {
 function toggleWidgets(lang) {
     switch(lang) {
         case 'ru':
-            console.log('kek')
+            
             showHide('ru-hide', 'en-hide');
             break;
         default:
-            console.log('lol')
+            
             showHide('en-hide', 'ru-hide');
     }
 }
